@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCRUM Logs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/piedevlogo.png">
+</head>
+    <body>
+        <div id="nav" class="nav">
+            <a href="javascript:void(0)" class="closebtn">☰</a>
+            <a href="#"> Home </a>
+            <a href="#Team"> Team </a>
+            <a href="#Logs"> Logs </a>
+          </div>
+          <button class="openbtn"> ☰ </button>  
+        <main id="main">
+            <div class="Company">
+                <div class="header">
+                    <div> <h1> <span style="color: Peru"> PIE </span> Dev Studios <h2> mini </h2></h1> </div>
+                    <img src="images/piedevlogo.png">
+                </div>
+                <hr>
+            </div>
+            
+            <div class="Team" id="Team">
+                <h3> Team Members </h3>
+                <ul>
+                    <li> Benjamin Jiongco <img src="images/plutz.png"> <span style="font-weight: 200;"> CEO </span></img></li>
+                    <li> Kaley Vuong <img src="images/IMG_0813.jpeg"> <span style="font-weight: 200;"> SCRUM Master </span></img></li>
+                    <li> Megan Do <img src="images/moodo.png"> </img></li>
+                    <li> Logan Gravitt <img src="images/magicb.png"> </img></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="Logs" id="Logs">
+                <h3>SCRUM Logs</h3>
+                <div class="Doc">
+                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTvZSmk3GKbkP6LqO2LPRQQzrcMrgkq5HHQuBpbn5HX2ekH08_JNp4JAqi_TksIYcgG3lcCeLYczrBK/pub?embedded=true" style="scrollbar-width: none;"></iframe>
+                </div>
+            </div>
+        </main>
+        <script>
+            const nav = document.querySelector(".nav");
+            const open = document.querySelector(".openbtn");
+            const close = document.querySelector(".closebtn")
+                open.addEventListener("click", () => {
+                    nav.classList.toggle("show")
+                })
+
+                close.addEventListener("click", () => {
+                    nav.classList.remove("show")
+                })
+        </script>
+
+    </body>
+</html>

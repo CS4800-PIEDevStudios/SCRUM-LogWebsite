@@ -1,0 +1,216 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    background-color:whitesmoke;
+    font-family: "Montserrat", serif;
+}
+
+h1 {
+    font-size: clamp(6rem, 5.18181818182rem + 3.63636363636vw, 11rem);
+    font-weight: 400;
+}
+
+h2 {
+    font-size: clamp(4rem, -0.309090909091rem + 5.81818181818vw, 9rem);
+    font-weight: 200;
+}
+
+h3 {
+    font-size: clamp(4rem, -0.309090909091rem + 5.81818181818vw, 6rem);
+    font-weight: 400;
+}
+
+.Company .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img {
+    height: clamp(10rem, 8.36363636364rem + 7.27272727273vw, 20rem);
+    width: clamp(10rem, 8.36363636364rem + 7.27272727273vw, 20rem);
+    padding: clamp(0.5rem, 0.254545454545rem + 1.09090909091, 2rem);
+    background-color: white;
+    border-radius: 200px;
+    border: solid rgb(174, 153, 131) 10px;
+}
+
+.Company h1 {
+    margin: 0px;
+}
+
+.Company h2{
+    margin-left: clamp(0.1rem, 0.059090909091rem + 0.18181 8181818vw, 0.35rem);
+    margin-top: clamp(0.1rem, 0.068909090909rem + 0.138181818182vw, 0.35rem);
+    margin-bottom: 15rem;
+}
+
+hr{
+    height: 3px;
+    background-color: grey;
+    border: 0;
+}
+
+.Doc {
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    padding-block: 10rem;
+    border-radius: 50px;
+}
+
+.Doc iframe{
+    width: 45rem;
+    height: 65rem;
+    border: 10px peru solid;
+    border-radius: 100px;
+}
+
+.Team ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: rgb(174, 153, 131);
+    color: whitesmoke;
+    border-radius: clamp(6rem, 5.18181818182rem + 3.63636363636vw, 11rem);
+    margin-bottom: 15rem;
+    font-weight: 400;
+    font-size: clamp(0.5rem, 0.0090909090905rem + 2.18181818182vw, 3.5rem);
+    padding: clamp(1rem, 0.181818181819rem + 3.63636363636vw, 6rem);
+    text-align: center;
+}
+
+.Team ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.Team img {
+    width: clamp(5rem, 1.72727272726rem + 14.5454545455vw, 25em);
+    height: clamp(5rem, 1.72727272726rem + 14.5454545455vw, 25em);
+    object-fit: cover;
+    border-radius: 200px;
+}
+
+/* nav */
+
+.nav {
+  height: 100%;
+  width: 0rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 13rem;
+  display: block;
+  overflow: hidden;
+}
+
+.nav.show {
+    width: 15.625rem;
+}
+
+.nav a {
+  padding: 20px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: peru;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: black;
+}
+
+.nav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 4rem;
+  padding: 4rem 2rem;
+  color: black;
+}
+
+.openbtn {
+  font-size: 4rem;
+  cursor: pointer;
+  color: peru;
+  padding: 4rem 2rem;
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+#main {
+  transition: margin-left .5s;
+  margin: clamp(1rem, -1.29090909091rem + 10.1818181818vw, 15rem);
+  margin-top: 15rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav a {
+    font-size: 1.2rem;
+    color: black;
+    overflow: hidden;
+}
+
+.nav a:hover {
+    color: whitesmoke;
+  }
+
+.nav {
+    background:rgba(174, 153, 131, 0.9);
+    display: flex;
+    width: 100vw;
+    height: 5vh;   
+    float: top;
+    padding: 1rem;
+    margin: 0;
+}
+
+.openbtn {
+    height: 0;
+    visibility: hidden;
+}
+
+.closebtn {
+    height: 0;
+    visibility: hidden;
+}
+
+.header {
+    flex-direction: column-reverse;
+}
+
+.header img {
+    border: solid rgb(174, 153, 131) 5px;
+}
+
+.Team ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    font-size: 2rem;
+}
+
+.Team img {
+    width: clamp(20rem, 19.1818181818rem + 3.63636363636vw, 25rem);
+    height: clamp(20rem, 19.1818181818rem + 3.63636363636vw, 25rem);
+}
+
+.Doc iframe{
+    width: 35rem;
+}
+
+}
