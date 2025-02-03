@@ -158,59 +158,137 @@ hr{
 }
 
 @media screen and (max-width: 1000px) {
-  .nav a {
-    font-size: 1.2rem;
-    color: black;
-    overflow: hidden;
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .nav a {
+        font-size: 1.2rem;
+        color: black;
+        overflow: hidden;
+    }
+
+    .nav a:hover {
+        color: whitesmoke;
+    }
+
+    .nav {
+        background:rgba(174, 153, 131, 0.9);
+        display: flex;
+        width: 100vw;
+        height: 70px;   
+        float: top;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .openbtn {
+        height: 0;
+        visibility: hidden;
+    }
+
+    .closebtn {
+        height: 0;
+        visibility: hidden;
+    }
+
+    .header img {
+        border: solid rgb(174, 153, 131) 5px;
+    }
+
+    .Company h2 {
+        margin-bottom: 30px;
+    }
+
+    .Team ul {
+        display: grid;
+        grid-template: clamp(5rem, 5rem + 20vw, 15rem) clamp(5rem, 5rem + 20vw, 15rem) / auto auto;
+        row-gap: 3rem;
+        column-gap: 3rem;
+        padding-top: 3rem;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+  
+    .Team img {
+        width: clamp(1rem, 2rem + 20vw, 15rem);
+        height: clamp(1rem, 2rem + 20vw, 15rem);
+    }
+
+    .Logs {
+        display: flex;
+        flex-direction: column; 
+    }
+  
+    .Doc {
+        width: 640px;
+        height: 720px;
+        overflow: hidden;
+        align-self: center;
+        padding-block: 0;
+      }
+      
+      iframe {
+        width: 100% !important;
+        height: 100% !important;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 220px 200px;
+      }
+
 }
 
-.nav a:hover {
-    color: whitesmoke;
+
+@media screen and (max-width: 500px), (max-height: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .Company h2 {
+        margin-bottom: 30px;
+    }
+    .nav a {
+        font-size: 1rem;
+    }
+
+    .nav {
+        height: 50px;   
+    }
+  
+    .header img {
+        height: 6.5rem;
+        width: 6.5rem;
+    } 
+
+    .Doc {
+        width: 480px;
+        height: 640px;
+        overflow: hidden;
+        justify-content: center;
+        padding-block: 0;
+      }
+      
+      iframe {
+        width: 100% !important;
+        height: 100% !important;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 100px 200px;
+      }
   }
-
-.nav {
-    background:rgba(174, 153, 131, 0.9);
-    display: flex;
-    width: 100vw;
-    height: 5vh;   
-    float: top;
-    padding: 1rem;
-    margin: 0;
-}
-
-.openbtn {
-    height: 0;
-    visibility: hidden;
-}
-
-.closebtn {
-    height: 0;
-    visibility: hidden;
-}
-
-.header {
-    flex-direction: column-reverse;
-}
-
-.header img {
-    border: solid rgb(174, 153, 131) 5px;
-}
-
-.Team ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vh;
-    font-size: 2rem;
-}
-
-.Team img {
-    width: clamp(20rem, 19.1818181818rem + 3.63636363636vw, 25rem);
-    height: clamp(20rem, 19.1818181818rem + 3.63636363636vw, 25rem);
-}
-
-.Doc iframe{
-    width: 35rem;
-}
-
-}
