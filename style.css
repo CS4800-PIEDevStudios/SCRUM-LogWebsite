@@ -68,8 +68,9 @@ hr{
 }
 
 .Team ul {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template: clamp(5rem, 5rem + 20vw, 15rem) clamp(5rem, 5rem + 20vw, 15rem) / auto auto;
+    row-gap: 10rem;
     list-style-type: none;
     background-color: rgb(174, 153, 131);
     color: whitesmoke;
@@ -94,8 +95,6 @@ hr{
     object-fit: cover;
     border-radius: 200px;
 }
-
-/* nav */
 
 .nav {
   height: 100%;
@@ -246,7 +245,7 @@ hr{
 }
 
 
-@media screen and (max-width: 500px), (max-height: 800px) {
+@media screen and (max-width: 700px) {
     h1 {
         font-size: 4rem;
     }
@@ -290,5 +289,23 @@ hr{
         transform: scale(0.9);
         -webkit-transform-origin: 0 0;
         transform-origin: 100px 200px;
+      }
+  }
+
+  @media screen and (max-width: 400px),(max-height: 400px) {
+    .Doc {
+        width: 400px;
+        height: 480px;
+        overflow: hidden;
+        padding: 0;
+      }
+      
+      iframe {
+        width: 100% !important;
+        height: 100% !important;
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 190px 240px;
       }
   }
