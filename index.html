@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="images/piedevlogo.png">
 </head>
     <body>
+        <!-- Navigation -->
         <div id="nav" class="nav">
             <a href="javascript:void(0)" class="closebtn">☰</a>
             <a href="#"> Home </a>
@@ -19,6 +20,7 @@
           </div>
           <button class="openbtn"> ☰ </button>  
         <main id="main">
+            <!-- Title -->
             <div class="Company">
                 <div class="header">
                     <div> <h1> <span style="color: Peru"> PIE </span> Dev Studios <h2> mini </h2></h1> </div>
@@ -27,17 +29,18 @@
                 <hr>
             </div>
             
+            <!-- Team member photos -->
             <div class="Team" id="Team">
                 <h3> Team Members </h3>
                 <ul>
                     <li> Benjamin Jiongco <img src="images/ben_headshot.jpg"> <span style="font-weight: 200;"> CEO </span></img></li>
                     <li> Kaley Vuong <img src="images/IMG_0813.jpeg"> <span style="font-weight: 200;"> SCRUM Master </span></img></li>
-                    <li> Megan Do <img src="images/moodo.png"> </img></li>
-                    <li> Logan Gravitt <img src="images/magicb.png"> </img></li>
-                    <li> Riem Nouh <img src="images/r.png"> </img></li>
+                    <li> Megan Do <img src="images/moodo.jpg"> </img></li>
+                    <li> Logan Gravitt <img src="images/login.png"> </img></li>
                 </ul>
             </div>
             <hr>
+            <!-- SCRUM -->
             <div class="Logs" id="Logs">
                 <h3>SCRUM Logs</h3>
                 <div class="Doc">
@@ -45,6 +48,7 @@
                 </div>
             </div>
         </main>
+        <!-- Script for navigation -->
         <script>
             const nav = document.querySelector(".nav");
             const open = document.querySelector(".openbtn");
@@ -57,6 +61,5 @@
                     nav.classList.remove("show")
                 })
         </script>
-
     </body>
 </html>
